@@ -5,8 +5,7 @@ provider "aws" {
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "lanceplarsenv2
-"
+    organization = "lanceplarsenv2"
 
     workspaces {
       name = "aws-two-tier-prod"
