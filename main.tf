@@ -2,6 +2,18 @@ provider "aws" {
   region = "${var.aws_region}"
 }
 
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "lanceplarsenv2
+"
+
+    workspaces {
+      name = "aws-two-tier-prod"
+    }
+  }
+}
+
 data "aws_ami" "ubuntu" {
     most_recent = true
 
