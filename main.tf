@@ -8,7 +8,7 @@ terraform {
     organization = "lanceplarsenv2"
 
     workspaces {
-      name = "aws-two-tier-prod"
+      prefix = "aws-two-tier-"
     }
   }
 }
