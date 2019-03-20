@@ -133,7 +133,7 @@ resource "aws_instance" "web" {
   subnet_id = "${aws_subnet.default.id}"
   
   tags = {
-    env = "dev"
+   deployment = "v1"
   }
 
   provisioner "remote-exec" {
